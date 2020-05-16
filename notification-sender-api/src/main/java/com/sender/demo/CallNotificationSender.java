@@ -8,7 +8,7 @@ public class CallNotificationSender implements NotificationSenderService {
     public void sendNotification(String contactInfo, SenderTemplate template) {
         // TODO Auto-generated method stub
 
-        System.out.println("Phone Call Notification");
+        System.out.println("Phone Call");
     }
 
 }
