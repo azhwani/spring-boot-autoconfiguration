@@ -1,5 +1,6 @@
 package com.demo.app;
 
+import com.sender.demo.CallNotificationSender;
 import com.sender.demo.SenderTemplate;
 import com.sender.demo.SmsNotificationSender;
 import com.sender.demo.services.NotificationSenderService;
@@ -16,9 +17,14 @@ public class DemoApplication {
     }
 
 
-    @Bean
+    /*@Bean
     public SmsNotificationSender senderService() {
         return new SmsNotificationSender();
+    }*/
+    
+    @Bean
+    public CallNotificationSender senderService() {
+        return new CallNotificationSender();
     }
 
 
